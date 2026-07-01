@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #eaffea;
+  text-align: center;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(90deg, #16a34a, #22c55e);
+  color: white;
+  padding: 20px;
+  animation: slideDown 1s ease;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.header p {
+  margin: 5px;
+}
+
+/* Animation */
+@keyframes slideDown {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Form */
+.box {
+  margin: 20px;
+}
+
+input {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #22c55e;
+  border-radius: 5px;
+  outline: none;
+}
+
+button {
+  padding: 10px 15px;
+  background: #16a34a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #15803d;
+}
+
+/* List */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: white;
+  margin: 10px auto;
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  border-left: 5px solid #22c55e;
+}
+
+.delete {
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
